@@ -34,7 +34,8 @@ function post(){
             if (postRequest.status == 200) {
                 console.log(postRequest.responseText)
             } else { 
-              alert(postRequest.responseText)
+                var y = postRequest.responseText;
+                document.getElementById("error").innerText= y
             }
         }
     }
